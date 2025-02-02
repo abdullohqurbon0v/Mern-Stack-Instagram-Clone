@@ -3,7 +3,7 @@
 import { posts } from '@/constants';
 import { IPost } from '@/types';
 import Image from 'next/image';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const ExplorePage = () => {
   const [hoveredPost, setHoveredPost] = useState<IPost | null>(null);

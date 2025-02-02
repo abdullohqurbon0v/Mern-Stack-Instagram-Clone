@@ -2,7 +2,7 @@
 
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
-import { Sheet, SheetClose, SheetContent, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { search } from "@/constants";
 import { BadgePlus, Compass, Heart, Home, MessageCircle, Search, User } from "lucide-react";
 import { Settings } from 'lucide-react'
@@ -11,7 +11,6 @@ import Link from 'next/link'
 import React, { FormEvent, useState } from 'react'
 
 const Sidebar = () => {
-  const [foundedUsers, setFoundedUsers] = useState([])
   const [query, setQuery] = useState('')
 
   const handleSearch = (e: FormEvent<HTMLFormElement>): void => {

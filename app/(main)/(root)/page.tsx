@@ -1,9 +1,9 @@
 'use client'
 import { posts } from '@/constants'
-import { Bookmark, Heart, MessageCircle, Save } from 'lucide-react'
+import { Bookmark, Heart, MessageCircle } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import SuggestedUsers from '../_components/suggested-users'
 
 const MainPage = () => {
@@ -11,8 +11,8 @@ const MainPage = () => {
     <div className='flex justify-around'>
       <div className='flex flex-col items-center justify-center mt-10'>
         <div className='w-[50%] text-center'>
-          <h1 className='text-xl font-medium'>You're all caught up</h1>
-          <p className='text-gray-700'>You've seen all new posts from the past 3 days.</p>
+          <h1 className='text-xl font-medium'>You&apos;re all caught up</h1>
+          <p className='text-gray-700'>You &apos;ve seen all new posts from the past 3 days.</p>
         </div>
         <div className=''>
           {posts.map((item, idx) => (

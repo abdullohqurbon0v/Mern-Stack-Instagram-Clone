@@ -4,18 +4,13 @@ import { Separator } from '@/components/ui/separator'
 import { search } from '@/constants'
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React from 'react'
 
 const SuggestedUsers = () => {
-  const [targetUser, setTargetUser] = useState({
+  const targetUser = {
     profileImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Edvard_Hoem.JPG/1200px-Edvard_Hoem.JPG",
     username: "youtube",
     fullName: "Youtube Offisial Company"
-  },)
-
-
-  async function onFollowUser(userId: string) {
-
   }
   return (
     <div className='py-8'>
@@ -44,7 +39,7 @@ const SuggestedUsers = () => {
                 <p className="text-sm">{item.fullName}</p>
               </div>
             </Link>
-            <p className='text-blue-500 font-medium cursor-pointer' onClick={() => onFollowUser}>Follow</p>
+            <p className='text-blue-500 font-medium cursor-pointer' >Follow</p>
           </div>
         ))}
       </div>
