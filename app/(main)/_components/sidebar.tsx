@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import { Sheet, SheetClose, SheetContent, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { search } from "@/constants";
-import { Compass, Heart, Home, Search, User } from "lucide-react";
+import { BadgePlus, Compass, Heart, Home, MessageCircle, Search, User } from "lucide-react";
 import { Settings } from 'lucide-react'
 import Image from "next/image";
 import Link from 'next/link'
@@ -109,6 +109,18 @@ const Sidebar = () => {
             <div className='flex items-center cursor-pointer transition-all rounded-xl space-x-4 hover:bg-secondary py-3 px-4'>
               <Compass />
               <p>Explore</p>
+            </div>
+          </Link>
+          <Link href={'/direct'}>
+            <div className='flex items-center cursor-pointer transition-all rounded-xl space-x-4 hover:bg-secondary py-3 px-4'>
+              <MessageCircle />
+              <p>Messages</p>
+            </div>
+          </Link>
+          <Link href={'/'}>
+            <div className='flex items-center cursor-pointer transition-all rounded-xl space-x-4 hover:bg-secondary py-3 px-4'>
+              <BadgePlus />
+              <p>Create</p>
             </div>
           </Link>
           <Link href={'/user'}>
