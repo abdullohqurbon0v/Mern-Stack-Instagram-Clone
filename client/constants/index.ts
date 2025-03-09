@@ -25,7 +25,7 @@ export const posts = [
       username: "full_stack_yt",
       fullName: "Full Stack developer"
     },
-    PostImage: 'https://i.pinimg.com/474x/0e/38/66/0e3866c3be7dacea85ade553b5eac877.jpg',
+    postVideo: 'https://res.cloudinary.com/ddjfytkxs/video/upload/v1741540327/pxkgf4x7yr54rxyybzgz.mp4',
     totalLikes: 1232,
     description: 'Uziga tashen 🚀',
     createdAt: '1w',
@@ -38,7 +38,7 @@ export const posts = [
       username: "full_stack_yt",
       fullName: "Full Stack developer"
     },
-    PostImage: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToIZgsflyd1YiDYZDYAti86gBy31voZnPEwA&s',
+    postVideo: 'https://res.cloudinary.com/ddjfytkxs/video/upload/v1741540327/pxkgf4x7yr54rxyybzgz.mp4',
     totalLikes: 1332,
     description: 'Uziga tashen 🚀',
     createdAt: '',
@@ -51,7 +51,7 @@ export const posts = [
       username: "full_stack_yt",
       fullName: "Full Stack developer"
     },
-    PostImage: 'https://i.pinimg.com/474x/0e/38/66/0e3866c3be7dacea85ade553b5eac877.jpg',
+    postVideo: 'https://res.cloudinary.com/ddjfytkxs/video/upload/v1741540832/n92eeawvlscphaktdgkj.mp4',
     totalLikes: 142,
     description: 'Uziga tashen 🚀',
     createdAt: '1w',
@@ -64,7 +64,7 @@ export const posts = [
       username: "full_stack_yt",
       fullName: "Full Stack developer"
     },
-    PostImage: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToIZgsflyd1YiDYZDYAti86gBy31voZnPEwA&s',
+    postVideo: 'https://res.cloudinary.com/ddjfytkxs/video/upload/v1741540327/pxkgf4x7yr54rxyybzgz.mp4',
     totalLikes: 12212,
     description: 'Uziga tashen 🚀',
     createdAt: '',
@@ -76,7 +76,7 @@ export const posts = [
       username: "full_stack_yt",
       fullName: "Full Stack developer"
     },
-    PostImage: 'https://i.pinimg.com/474x/0e/38/66/0e3866c3be7dacea85ade553b5eac877.jpg',
+    postVideo: 'ahttps://res.cloudinary.com/ddjfytkxs/video/upload/v1741540327/pxkgf4x7yr54rxyybzgz.mp4',
     totalLikes: 134322,
     description: 'Uziga tashen 🚀',
     createdAt: '1w',
@@ -89,7 +89,7 @@ export const posts = [
       username: "full_stack_yt",
       fullName: "Full Stack developer"
     },
-    PostImage: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToIZgsflyd1YiDYZDYAti86gBy31voZnPEwA&s',
+    postVideo: 'ahttps://res.cloudinary.com/ddjfytkxs/video/upload/v1741540327/pxkgf4x7yr54rxyybzgz.mp4',
     totalLikes: 1322,
     description: 'Uziga tashen 🚀',
     createdAt: '',

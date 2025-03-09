@@ -7,6 +7,8 @@ import { Button } from "@/components/ui/button";
 import { Lock, Mail, User } from "lucide-react";
 import useAuthStore from "@/hooks/use-auth-store";
 import Link from "next/link";
+import { $axios } from "@/http/api";
+import { useRouter } from "next/navigation";
 
 const SignUpPage = () => {
   const [loading, setLoading] = useState<boolean>(false);
@@ -19,13 +21,24 @@ const SignUpPage = () => {
     setPassword,
     clearFields,
   } = useAuthStore();
+  const router = useRouter();
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
     try {
+      const res = await $axios.post("user/create", {
+        username,
+        email,
+        password,
+      });
+      localStorage.setItem("token", res.data.token);
+      router.push("/");
+      console.log(res);
     } catch (error) {
       console.log(error);
+    } finally {
+      setLoading(false);
     }
   };
 
