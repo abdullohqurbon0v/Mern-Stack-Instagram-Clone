@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { posts } from '@/constants';
-import { IPost } from '@/types';
-import Image from 'next/image';
-import { useState } from 'react';
+import { posts } from "@/constants";
+import { IPost } from "@/types";
+import Image from "next/image";
+import { useState } from "react";
 
 const ExplorePage = () => {
   const [hoveredPost, setHoveredPost] = useState<IPost | null>(null);
@@ -35,7 +35,9 @@ const ExplorePage = () => {
             />
             {hoveredPost && hoveredPost.id === item.id && (
               <div className="absolute z-10 p-4 rounded-md top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-                <h3 className="text-2xl text-white font-bold">{item.totalLikes}</h3>
+                <h3 className="text-2xl text-white font-bold">
+                  {item.totalLikes}
+                </h3>
               </div>
             )}
           </div>
